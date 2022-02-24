@@ -4,9 +4,7 @@ window.addEventListener("DOMContentLoaded", event => {
     const audio = document.getElementById("sfx");
     let heartIndex = 0;
     function checkKey(e) {
-        console.log(heartIndex)
         e = e || window.event;
-        console.log(e.which)
         if (e.which == 38) {
             if (heartIndex > 0) {
                 heartIndex--;
@@ -30,6 +28,19 @@ window.addEventListener("DOMContentLoaded", event => {
         else if (e.which == 13 || e.which == 90) {
             audio.setAttribute("src", "Select.wav");
             audio.paused ? audio.play() : audio.play();
+            console.log(heartIndex)
+            if (heartIndex == 0) {
+                window.location.href = "http://youtube.com/c/squiddo";
+            }
+            else if (heartIndex == 1) {
+                window.location.href = "http://discord.gg/squiddo";
+            }
+            else if (heartIndex == 2) {
+                window.location.href = "http://twitter.com/therealsquiddo";
+            }
+            else if (heartIndex == 3) {
+                window.location.href = "https://namemc.com/server/mc.squiddo.xyz";
+            }
         }
     }
     document.onkeydown = checkKey;
