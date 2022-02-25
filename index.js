@@ -1,4 +1,3 @@
-
 window.addEventListener("DOMContentLoaded", event => {
     const typeText = document.querySelector(".typeText")
     let textToBeTyped = "* HEY [[EVERY!!]]\n* IT'S ME, [TheRealSquiddo] WITH SOME SPECIL DEALS!!"
