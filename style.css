@@ -96,7 +96,7 @@ a {
   position: absolute;
 }
 
-@media only screen and (max-device-width: 768px) {
+@media only screen and (max-width: 640px) {
   #container {
     width: 80%;
     height: 50%;
