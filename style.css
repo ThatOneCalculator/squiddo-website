@@ -17,6 +17,10 @@ a {
   color: white !important;
 }
 
+#ui {
+  height: 600px;
+}
+
 #container {
   position: absolute;
   top: 50%;
@@ -71,4 +75,19 @@ a {
   bottom: 0px;
   right: 0px;
   position: absolute;
+}
+
+@media only screen and (max-device-width: 768px) {
+  #container {
+    width: 80%;
+    height: 50%;
+  }
+  #main_text {
+    z-index: 10;
+    margin-left: 2rem;
+    margin-top: 25rem;
+    padding-right: 30rem;
+    position: absolute;
+    text-align: left !important;
+  }
 }

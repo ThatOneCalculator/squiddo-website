@@ -1,5 +1,8 @@
 const typeText = document.querySelector(".typeText")
-const textToBeTyped = "* HEY [[EVERY!!]]\n* IT'S ME, [TheRealSquiddo] WITH SOME SPECIL DEALS!!\n* DON;T FORGET TO [L<IKE AND SUSCRIBE!!]"
+let textToBeTyped = "* HEY [[EVERY!!]]\n* IT'S ME, [TheRealSquiddo] WITH SOME SPECIL DEALS!!"
+if(screen.width >= 640) {
+  textToBeTyped +="\n* DON;T FORGET TO [L<IKE AND SUSCRIBE!!]"
+}
 let index = 0, isAdding = true
 
 function playAnim() {
