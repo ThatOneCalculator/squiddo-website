@@ -1,0 +1,67 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-size: 16px 16px;
+}
+
+.background-bottom,
+.background-top {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(transparent 49px,
+            rgb(204, 0, 204, 0.9),
+            transparent 51px),
+        linear-gradient(90deg,
+            transparent 49px,
+            rgb(204, 0, 204, 0.9),
+            transparent 51px),
+        linear-gradient(90deg,
+            transparent 9px,
+            rgba(0, 255, 0, 0) 10px,
+            transparent 10px);
+    background-size: 100px 100px;
+    background-position: center;
+}
+
+.background-bottom {
+    background-color: #000000;
+    animation: horizontal 10s linear infinite;
+}
+
+.background-top {
+    background-color: transparent;
+    animation: diagonal 8s linear infinite;
+}
+
+@keyframes diagonal {
+    from {
+        background-position: bottom right;
+    }
+
+    to {
+        background-position: top left;
+    }
+}
+
+@keyframes horizontal {
+    from {
+        background-position: bottom right;
+    }
+
+    to {
+        background-position: bottom left;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .background-bottom,
+    .background-top {
+       height: 210%;
+       width: 210%;
+    }
+  }

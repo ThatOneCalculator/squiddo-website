@@ -1,36 +1,11 @@
 @font-face {
   font-family: determination;
-  src: url(assets/determination.woff);
+  src: url(../assets/determination.woff);
 }
 
-html {
-  background-image: url(assets/battle.gif);
+html, body {
   font-family: determination;
   color: white;
-}
-
-#loader {
-  border: 12px solid #f3f3f3;
-  border-radius: 50%;
-  border-top: 12px solid #444444;
-  width: 70px;
-  height: 70px;
-  animation: spin 1s linear infinite;
-}
-
-@keyframes spin {
-  100% {
-      transform: rotate(360deg);
-  }
-}
-
-.center {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
 }
 
 p {
@@ -70,19 +45,19 @@ a {
 }
 
 #youtube {
-  top: 360px;
+  top: 393px;
 }
 
 #discord {
-  top: 410px;
+  top: 443px;
 }
 
 #twitter {
-  top: 460px;
+  top: 493px;
 }
 
 #smp {
-  top: 510px;
+  top: 543px;
 }
 
 #heart {
