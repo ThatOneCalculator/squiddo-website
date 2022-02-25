@@ -9,6 +9,30 @@ html {
   color: white;
 }
 
+#loader {
+  border: 12px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 12px solid #444444;
+  width: 70px;
+  height: 70px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+.center {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
 p {
   font-size: 2em;
 }
@@ -29,7 +53,7 @@ a {
 }
 
 #main_text {
-  z-index: 10;
+  z-index: 9;
   margin-left: 2rem;
   margin-top: 25rem;
   padding-right: 19rem;
@@ -38,7 +62,7 @@ a {
 }
 
 .side_text {
-  z-index: 10;
+  z-index: 9;
   position: absolute;
   left: 50px;
   padding-left: 480px;
@@ -62,7 +86,7 @@ a {
 }
 
 #heart {
-  z-index: 10;
+  z-index: 9;
   margin-left: 31rem;
   margin-top: 25rem;
   position: absolute;
@@ -71,7 +95,7 @@ a {
 
 #spamlaugh {
   opacity: 0.2;
-  z-index: 10;
+  z-index: 9;
   bottom: 0px;
   right: 0px;
   position: absolute;
@@ -83,7 +107,7 @@ a {
     height: 50%;
   }
   #main_text {
-    z-index: 10;
+    z-index: 9;
     margin-left: 2rem;
     margin-top: 25rem;
     padding-right: 30rem;
