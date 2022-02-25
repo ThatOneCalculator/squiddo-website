@@ -1,1 +1,0 @@
-{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QSquiddo </head> <body> <center> <img src=\"ui.png\" id=\"ui\"/> </center> </body>\\E$"}
