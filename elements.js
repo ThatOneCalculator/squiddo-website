@@ -1,7 +1,18 @@
 
 window.addEventListener("DOMContentLoaded", event => {
+    const audio = document.getElementById("mus");
+    const ja = document.getElementById("ui");
+    let playing = false;
+    audio.volume = 1.0;
+    ja.addEventListener("click", () => {
+      if (!playing) {
+        audio.setAttribute("src", "assets/Dialtone.mp3");
+        audio.paused ? audio.play() : audio.pause();
+        playing = true;
+      }
+    });
     const heart = document.getElementById("heart");
-    const audio = document.getElementById("sfx");
+    const sfx = document.getElementById("sfx");
     let heartIndex = 0;
     function checkKey(e) {
         e = e || window.event;
@@ -12,12 +23,12 @@ window.addEventListener("DOMContentLoaded", event => {
                 let topValue = heartStyle.getPropertyValue("top").replace("px", "");
                 heart.style.top = (Number(topValue) - 50) + "px";
             }
-            audio.setAttribute("src", "Select.wav");
-            audio.paused ? audio.play() : audio.play();
+            sfx.setAttribute("src", "assets/Select.wav");
+            sfx.paused ? sfx.play() : sfx.play();
         }
         else if (e.which == 40) {
-            audio.setAttribute("src", "Select.wav");
-            audio.paused ? audio.play() : audio.play();
+            sfx.setAttribute("src", "assets/Select.wav");
+            sfx.paused ? sfx.play() : sfx.play();
             if (heartIndex < 3 && heartIndex >= 0) {
                 heartIndex++;
                 let heartStyle = window.getComputedStyle(heart);
@@ -26,8 +37,8 @@ window.addEventListener("DOMContentLoaded", event => {
             }
         }
         else if (e.which == 13 || e.which == 90) {
-            audio.setAttribute("src", "Select.wav");
-            audio.paused ? audio.play() : audio.play();
+            sfx.setAttribute("src", "assets/Select.wav");
+            sfx.paused ? sfx.play() : sfx.play();
             console.log(heartIndex)
             if (heartIndex == 0) {
                 window.location.href = "http://youtube.com/c/squiddo";
